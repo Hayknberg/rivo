@@ -16,7 +16,7 @@
           <use xlink:href="./svg/sprite.svg#logo" />
         </svg>
       </a>
-      <nav class="nav flex justify-between">
+      <nav class="nav flex items-center justify-between">
         <ul class="nav__list reset-list flex">
           <li class="nav__item flex">
             <a class="nav__link flex items-center" href="#">HOME</a>
@@ -38,12 +38,11 @@
             </svg>
           </a>
           <button class="nav__button reset-button flex items-center">LOGIN</button>
-          <button class="burger reset-button flex items-center justify-center">
-            <img width="40" height="40" class="burger__img" src="./img/menu.svg" alt="menu list icon">
-          </button>
         </div>
       </nav>
-
+      <button onclick="openMenu()" class="burger reset-button flex items-center justify-center">
+        <img width="40" height="40" class="burger__img" src="./img/menu.svg" alt="menu list icon">
+      </button>
     </div>
   </header>
   <main class="main">
@@ -419,8 +418,8 @@
             </ul>
           </nav>
         </div>
-        <div class="footer__columns flex justify-between">
-          <div class="footer__column">
+        <div class="footer__columns footer__columns_desktop flex justify-between">
+          <div class="footer__column footer__column_shop">
             <h3 class="footer__column-title">SHOP</h3>
             <ul class="footer__column-list reset-list">
               <li>
@@ -437,7 +436,7 @@
               </li>
             </ul>
           </div>
-          <div class="footer__column">
+          <div class="footer__column footer__column_company">
             <h3 class="footer__column-title">COMPANY</h3>
             <ul class="footer__column-list reset-list">
               <li>
@@ -454,7 +453,7 @@
               </li>
             </ul>
           </div>
-          <div class="footer__column">
+          <div class="footer__column footer__column_form">
             <h3 class="footer__column-title">Stay up to date</h3>
             <form class="footer__form flex">
               <input class="footer__form-input" placeholder="Enter your email" type="email" name="subscribe">
@@ -478,6 +477,7 @@
       </div>
     </div>
   </footer>
+  <script src="main.js"></script>
 </body>
 
 </html>
